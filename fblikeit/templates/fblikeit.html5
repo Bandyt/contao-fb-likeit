@@ -1,9 +1,16 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like"<?php if ($this->fblikeit_href): ?> data-href="<?php echo $this->fblikeit_href; ?>"<?php endif; ?> data-send="false"<?php if ($this->fblikeit_layout): ?> data-layout="<?php echo $this->fblikeit_layout; ?>"<?php endif; ?> data-width="<?php echo $this->fblikeit_width; ?>"<?php if ($this->fblikeit_verb): ?> data-action="<?php echo $this->fblikeit_verb; ?>"<?php endif; ?> data-show-faces="<?php echo $this->fblikeit_faces; ?>"<?php if ($this->fblikeit_color): ?> data-colorscheme="<?php echo $this->fblikeit_color; ?>"<?php endif; ?> style="border:none; overflow:hidden; width:<?php echo $this->fblikeit_width; ?>px; height:<?php echo $this->fblikeit_height; ?>px;"></div>
+<div class="<?php echo $this->cssclass; ?>">
+	<?php if ($this->headline): ?>
+		<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+	<?php endif; ?>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="fb-like"<?php if ($this->fblikeit_href): ?> data-href="<?php echo $this->fblikeit_href; ?>"<?php endif; ?> data-send="false"<?php if ($this->fblikeit_layout): ?> data-layout="<?php echo $this->fblikeit_layout; ?>"<?php endif; ?> data-width="<?php echo $this->fblikeit_width; ?>"<?php if ($this->fblikeit_verb): ?> data-action="<?php echo $this->fblikeit_verb; ?>"<?php endif; ?> data-show-faces="<?php echo $this->fblikeit_faces; ?>"<?php if ($this->fblikeit_color): ?> data-colorscheme="<?php echo $this->fblikeit_color; ?>"<?php endif; ?> style="border:none; overflow:hidden; width:<?php echo $this->fblikeit_width; ?>px; height:<?php echo $this->fblikeit_height; ?>px;"></div>
+</div>
