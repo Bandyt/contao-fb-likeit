@@ -1,0 +1,1 @@
+Die Anleitungen wurde verschoben. Sie finden die Anleitung nun [hier](http://bandyt.de/contao-fblikeit-anleitung.html).
